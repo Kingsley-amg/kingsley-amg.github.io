@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kingsley Amegah — Health Data Scientist</title>
+<meta name="description" content="Portfolio of Kingsley Amegah, health data scientist: dashboards, machine learning, statistics and geospatial analysis in R and Python." />
+<meta property="og:title" content="Kingsley Amegah — Health Data Scientist" />
+<meta property="og:description" content="Data science portfolio: dashboards, machine learning, statistics and geospatial analysis in R and Python." />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#0f1b2d;--ink2:#16263d;--bg:#f6f8fb;--card:#fff;--line:#e4e9f0;
+        --muted:#5b6b80;--accent:#1a9e6a;--accent2:#2c7fb8;}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Inter',-apple-system,BlinkMacSystemFont,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+
+  /* hero */
+  header{background:linear-gradient(135deg,var(--ink) 0%,var(--ink2) 100%);color:#fff;padding:70px 0 60px;}
+  header .wrap{display:flex;flex-direction:column;gap:14px}
+  .badge{display:inline-block;background:rgba(26,158,106,.18);color:#5fe0a6;font-size:13px;
+         font-weight:600;padding:5px 12px;border-radius:20px;width:fit-content}
+  h1{font-size:42px;font-weight:800;letter-spacing:-.02em;line-height:1.1}
+  .role{font-size:20px;color:#aeb8c4;font-weight:500}
+  .lede{font-size:16px;color:#c8d0db;max-width:680px;margin-top:6px}
+  .links{display:flex;gap:12px;flex-wrap:wrap;margin-top:14px}
+  .btn{background:#fff;color:var(--ink);font-weight:600;font-size:14px;padding:10px 18px;border-radius:8px;transition:.15s}
+  .btn:hover{transform:translateY(-1px)}
+  .btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.35);color:#fff}
+
+  /* skills */
+  .skills{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+  .chip{background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.18);color:#dde4ec;
+        font-size:13px;padding:5px 11px;border-radius:7px}
+
+  /* sections */
+  section{padding:54px 0}
+  .stitle{font-size:14px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+  .shead{font-size:28px;font-weight:800;letter-spacing:-.02em;margin-bottom:26px}
+
+  /* project grid */
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;
+        display:flex;flex-direction:column;transition:.18s;box-shadow:0 1px 2px rgba(16,27,45,.04)}
+  .card:hover{transform:translateY(-3px);box-shadow:0 12px 28px rgba(16,27,45,.10)}
+  .thumb{height:188px;background:#eef2f7;overflow:hidden;display:flex;align-items:center;justify-content:center}
+  .thumb img{width:100%;height:100%;object-fit:cover;object-position:top}
+  .card .body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:10px;flex:1}
+  .card h3{font-size:18px;font-weight:700;letter-spacing:-.01em}
+  .card p{font-size:14.5px;color:var(--muted);flex:1}
+  .tags{display:flex;gap:6px;flex-wrap:wrap}
+  .tag{font-size:12px;font-weight:600;color:var(--accent2);background:#eaf2f9;padding:3px 9px;border-radius:6px}
+  .cardlinks{display:flex;gap:10px;margin-top:4px}
+  .cardlinks a{font-size:13.5px;font-weight:600;padding:7px 13px;border-radius:7px}
+  .live{background:var(--accent);color:#fff}
+  .code{background:#eef2f7;color:var(--ink)}
+
+  footer{background:var(--ink);color:#aeb8c4;padding:38px 0;text-align:center;font-size:14px}
+  footer a{color:#5fe0a6;font-weight:600}
+  @media(max-width:760px){.grid{grid-template-columns:1fr}h1{font-size:32px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <span class="badge">Open to Data Analyst / Data Scientist roles</span>
+    <h1>Kingsley Amegah</h1>
+    <div class="role">Health Data Scientist</div>
+    <p class="lede">I turn health and development data into clear decisions — across dashboards,
+      machine learning, statistics and geospatial analysis, in R and Python.</p>
+    <div class="links">
+      <a class="btn" href="https://github.com/Kingsley-amg" target="_blank">GitHub</a>
+      <a class="btn ghost" href="#projects">View projects ↓</a>
+    </div>
+    <div class="skills">
+      <span class="chip">R</span><span class="chip">Python</span><span class="chip">SQL</span>
+      <span class="chip">scikit-learn</span><span class="chip">statsmodels</span>
+      <span class="chip">Power BI</span><span class="chip">Tableau</span>
+      <span class="chip">Geospatial (sf / QGIS)</span><span class="chip">Machine learning</span>
+      <span class="chip">Statistics</span><span class="chip">Dashboards</span>
+    </div>
+  </div>
+</header>
+
+<section id="projects">
+  <div class="wrap">
+    <div class="stitle">Selected work</div>
+    <div class="shead">Projects</div>
+    <div class="grid" id="cards"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    Built by Kingsley Amegah · <a href="https://github.com/Kingsley-amg" target="_blank">github.com/Kingsley-amg</a><br>
+    Health Data Scientist · Open to data analyst &amp; data scientist roles
+  </div>
+</footer>
+
+<script>
+const P = [
+  {img:"assets/dashboard.png", title:"Ghana & Africa Health Dashboard",
+   desc:"Interactive surveillance dashboard of 8 health indicators across 53 African countries, with a choropleth map and year slider.",
+   tags:["R","Plotly","Dashboard"],
+   live:"https://kingsley-amg.github.io/ghana-africa-health-dashboard/",
+   code:"https://github.com/Kingsley-amg/ghana-africa-health-dashboard"},
+  {img:"assets/malnutrition.png", title:"Child Malnutrition: Africa → Ghana → Regions",
+   desc:"A geospatial and equity analysis mapping stunting across Ghana's 16 regions and revealing steep wealth and education gradients.",
+   tags:["R","sf","Geospatial"],
+   live:"https://kingsley-amg.github.io/ghana-malnutrition/",
+   code:"https://github.com/Kingsley-amg/ghana-malnutrition"},
+  {img:"assets/globalhealth.png", title:"Global Health: Drivers of Life Expectancy",
+   desc:"200+ countries over three decades — the Preston curve, a multivariate regression, and an interactive dashboard.",
+   tags:["Python","statsmodels","Dashboard"],
+   live:"https://kingsley-amg.github.io/global-health-analysis/",
+   code:"https://github.com/Kingsley-amg/global-health-analysis"},
+  {img:"assets/diabetes.png", title:"Diabetes Risk Prediction (Explainable AI)",
+   desc:"Machine learning on 253,000 adults with imbalance-aware evaluation, calibration, and SHAP explanations.",
+   tags:["Python","scikit-learn","SHAP"],
+   code:"https://github.com/Kingsley-amg/diabetes-risk-prediction"},
+  {img:"assets/nutrition.png", title:"Predicting Undernourishment in Africa",
+   desc:"Ten ML algorithms compared under honest country-held-out validation, backed by OLS and mixed-effects models.",
+   tags:["Python","scikit-learn","Statistics"],
+   code:"https://github.com/Kingsley-amg/africa-nutrition-ml"},
+  {img:"assets/ltv.png", title:"Customer Lifetime Value & Churn",
+   desc:"SQL feature engineering plus ML to predict repeat purchase and rank customers for marketing, with a gains-chart impact analysis.",
+   tags:["SQL","Python","Marketing"],
+   code:"https://github.com/Kingsley-amg/customer-ltv-prediction"},
+  {img:"assets/bpstats.png", title:"Blood-Pressure Statistics (NHANES)",
+   desc:"Inferential biostatistics: t-tests with effect sizes, multiple regression with diagnostics, and logistic-regression odds ratios.",
+   tags:["R","R Markdown","Biostatistics"],
+   live:"https://kingsley-amg.github.io/health-statistics-r/",
+   code:"https://github.com/Kingsley-amg/health-statistics-r"},
+];
+document.getElementById("cards").innerHTML = P.map(p => `
+  <div class="card">
+    <div class="thumb"><img src="${p.img}" alt="${p.title}" loading="lazy"></div>
+    <div class="body">
+      <h3>${p.title}</h3>
+      <p>${p.desc}</p>
+      <div class="tags">${p.tags.map(t=>`<span class="tag">${t}</span>`).join("")}</div>
+      <div class="cardlinks">
+        ${p.live?`<a class="live" href="${p.live}" target="_blank">Live ↗</a>`:""}
+        <a class="code" href="${p.code}" target="_blank">Code ↗</a>
+      </div>
+    </div>
+  </div>`).join("");
+</script>
+</body>
+</html>

@@ -58,6 +58,16 @@
   .live{background:var(--accent);color:#fff}
   .code{background:#eef2f7;color:var(--ink)}
 
+  /* about */
+  .about{background:#fff;border-bottom:1px solid var(--line)}
+  .bio{font-size:16.5px;color:#33414f;max-width:780px}
+  .bio + .bio{margin-top:14px}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:30px}
+  .stat{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:18px}
+  .stat b{display:block;font-size:26px;font-weight:800;color:var(--accent);letter-spacing:-.02em}
+  .stat span{display:block;font-size:13px;color:var(--muted);margin-top:5px;line-height:1.4}
+  @media(max-width:760px){.stats{grid-template-columns:repeat(2,1fr)}}
+
   footer{background:var(--ink);color:#aeb8c4;padding:38px 0;text-align:center;font-size:14px}
   footer a{color:#5fe0a6;font-weight:600}
   @media(max-width:760px){.grid{grid-template-columns:1fr}h1{font-size:32px}}
@@ -84,6 +94,29 @@
     </div>
   </div>
 </header>
+
+<section class="about">
+  <div class="wrap">
+    <div class="stitle">About</div>
+    <div class="shead">From the ward to data science</div>
+    <p class="bio">I'm a health data scientist who began my career at the hospital bedside as a
+      registered nurse in Ghana, and now turn health data into decisions. Over more than a decade
+      across clinical, government and academic settings, I've built and managed health information
+      systems, led monitoring and evaluation, and trained over 500 health professionals in data
+      analysis and digital health tools.</p>
+    <p class="bio">I work day to day in Python, R, SQL, Power BI, Tableau and QGIS, and my applied
+      research has contributed to more than 20 peer-reviewed publications in journals including
+      PLoS ONE and BMJ. I'm currently based in Olomouc, Czech Republic, pursuing a European Joint
+      Masters in Digital Society, Social Innovation &amp; Global Citizenship — and I'm driven by one
+      goal: making data genuinely useful for public health, and for the people behind the numbers.</p>
+    <div class="stats">
+      <div class="stat"><b>10+ yrs</b><span>across clinical, government &amp; academic health settings</span></div>
+      <div class="stat"><b>20+</b><span>peer-reviewed publications (PLoS ONE, BMJ)</span></div>
+      <div class="stat"><b>500+</b><span>health professionals trained</span></div>
+      <div class="stat"><b>2023</b><span>Presidential Honour for Distinguished Service</span></div>
+    </div>
+  </div>
+</section>
 
 <section id="projects">
   <div class="wrap">
